@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Perusahaan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeInAnimation 2s ease-in-out forwards;
+    }
+    
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Perusahaan XYZ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#kebijakan">Kebijakan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#jaringan">Bidang Jaringan</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h2 id="kebijakan" class="fade-in">Kebijakan Perusahaan</h2>
+    <p class="fade-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod malesuada turpis, ut sagittis lacus interdum id. Vestibulum ac arcu vitae mauris commodo convallis. Nulla at varius ligula.</p>
+
+    <h2 id="jaringan" class="fade-in">Bidang Jaringan</h2>
+    <p class="fade-in">Pada bidang jaringan, Perusahaan XYZ memiliki kebijakan-kebijakan berikut:</p>
+
+    <ul class="fade-in">
+      <li>Kebijakan 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+      <li>Kebijakan 2: Sed lacinia sapien et nibh varius, sed malesuada justo scelerisque.</li>
+      <li>Kebijakan 3: Mauris tincidunt arcu eu volutpat semper.</li>
+      <li>Kebijakan 4: Integer a justo auctor, consectetur enim id, eleifend dui.</li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var fadeElems = document.querySelectorAll(".fade-in");
+      fadeElems.forEach(function(elem) {
+        elem.style.animationDelay = "0.5s";
+      });
+    });
+  </script>
+</body>
+</html>
